@@ -53,14 +53,10 @@ def arithmetic_arranger(problems, show_answers=False):
 
             answers += result.rjust(max_len) + '    '
 
-    arranged_line = f"""
-  {first_line.rstrip()}
-  {sec_line.rstrip()}
-  {dashes.rstrip()}"""
+    arranged_line = f"{first_line.rstrip()}\n{sec_line.rstrip()}\n{dashes.rstrip()}"
 
     if show_answers:
-        arranged_line += f"""
-  {answers.rstrip()}"""
+        arranged_line += f"\n{answers.rstrip()}"
 
     return arranged_line
 
